@@ -16,16 +16,6 @@ def invoke_rag(query_item: QueryModel):
     print(f"✅ Item is updated: {query_item}")
     return query_item
 
-
-def main():
-    print("Running example RAG call.")
-    query_item = QueryModel(
-        query_text="How long does an e-commerce system take to build?"
-    )
-    response = invoke_rag(query_item)
-    print(f"Received: {response}")
-
-
 if __name__ == "__main__":
     # For local testing.
     main()
